@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(122, 122, 122);
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background: #232323;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px #dcbbd1fd
+}
+
+.game-details {
+    color: #DCBBD1 ;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: #333333;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: #ffb067;
+}
+
+.play-board .snake{
+    background: #DCBBD1;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 25px 0;
+     text-align: center;
+     font-size: 1.3rem;
+     color: #fff;
+     width: calc(100% / 4);
+     cursor: pointer;
+     border-right: 1px solid #a890a0;
+}
+
+
+.mp{
+    display: none;
+    opacity: 0;
+}
